@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+}
+
+button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #28a745;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+li.completed .task-text {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.actions .edit {
+    color: #007bff;
+}
+
+.actions .delete {
+    color: #dc3545;
+}
+
+.actions .save, .actions .cancel {
+    display: none;
+}
+
+li.editing .actions .edit, li.editing .actions .delete {
+    display: none;
+}
+
+li.editing .actions .save, li.editing .actions .cancel {
+    display: inline;
+}
+
+.edit-input {
+    display: none;
+    flex: 1;
+    margin-right: 5px;
+}
